@@ -1,4 +1,5 @@
-﻿Write-Host "MENÚ `n 
+﻿do {
+Write-Host "MENÚ `n 
 a) Crear una carpeta `n
 b) Crear un fichero nuevo `n
 c) Cambiar el nombre de un fichero o carpeta `n
@@ -52,3 +53,4 @@ switch ($opcion) {
         Write-Host "Esa opción no existe"
     }
 }
+} while ($opcion -ne "x")
