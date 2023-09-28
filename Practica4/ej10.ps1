@@ -1,4 +1,4 @@
-﻿Write-Host "**ESTE ES EL MENÚ** `n 
+﻿Write-Host "MENÚ `n 
 a) Crear una carpeta `n
 b) Crear un fichero nuevo `n
 c) Cambiar el nombre de un fichero o carpeta `n
@@ -8,7 +8,7 @@ f) Mostrar el contenido de un directorio. `n
 g) Mostar la fecha y hora actuales `n
 x) Salir `n"
 
-[string]$opcion = Read-Host "Dime una opción del menú" 
+[string]$opcion = Read-Host "Dame una opción del menú" 
 
 switch ($opcion) {
     "a" {
