@@ -1,8 +1,9 @@
-﻿[int] $numasteriscos = Read-Host "Dime un número"
+﻿[int] $altura = Read-Host "Dime un número"
 
-for ($i = 0; $i -lt $numasteriscos; $i++) {
-        for ($j = 0; $j -le $i; $j++) {
-            Write-Host -NoNewline "*"
-        }
-    Write-Host
+
+for ($fila=1; $fila -le $altura; $fila++) {
+    for ($col=1; $col -le $fila; $col++) {
+        Write-Host -NoNewline "*"
+}
+    Write-Host " "
 }
