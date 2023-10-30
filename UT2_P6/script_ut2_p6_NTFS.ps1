@@ -39,5 +39,5 @@ foreach ($emp in $empleados)
 
 foreach ($emp in $empleados)
 {
-Set-ADUser -Identity "$($emp.nombre).$($emp.apellido)" -ScriptPath "carpeta$($emp.departamento).bat" -HomeDrive "Z:" -HomeDirectory "\\empresa-DC1\Empresa_users$\$($emp.nombre).$($emp.apellido)"
+Set-ADUser -Identity "$($emp.nombre).$($emp.apellido)" -ScriptPath "carpetas$($emp.departamento).bat" -HomeDrive "Z:" -HomeDirectory "\\empresa-DC1\Empresa_users$\$($emp.nombre).$($emp.apellido)"
 }
